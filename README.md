@@ -18,7 +18,7 @@ This project focuses on extracting data from the Jumia website using Beautiful S
 
 ## Introduction
 
-This project involves creating an automated pipeline to collect product data from the Jumia website, store it in an Excel file, and then transfer it into a PostgreSQL database. By utilizing Python libraries like Beautiful Soup, Pandas, and SQLAlchemy, the process is streamlined and can be executed with ease.
+This project involves creating an automated pipeline to collect product data from the Jumia website, store it in an Excel file, and then transfer it into a `PostgreSQL` database. By utilizing `Python` libraries like `BeautifulSoup`, `Pandas`, and `SQLAlchemy`, the process is streamlined and can be executed with ease.
 
 ## Project Overview
 
@@ -47,19 +47,19 @@ This project involves creating an automated pipeline to collect product data fro
 
 ### Step 1: Web Scraping
 
-Use Beautiful Soup to scrape the desired data from the Jumia website [https://www.jumia.ma]. This may include product names, prices, descriptions and img url for each product. In my case I extracted data of xiaomi redmi product (smartphones).
+Use `BeautifulSoup` to scrape the desired data from the `Jumia` website [https://www.jumia.ma]. This may include product names, prices, descriptions and img url for each product. In my case I extracted data of xiaomi redmi product (smartphones).
 
 ### Step 2: Excel File Creation
 
-Structurize the scraped data using Pandas and create an Excel file to store the data temporarily.
+Structurize the scraped data using `Pandas` and create an Excel file to store the data temporarily.
 
 ### Step 3: Data Extraction from Excel
 
-Retrieve the data from the Excel file using Pandas. This step ensures data correctness before loading it into the database.
+Retrieve the data from the Excel file using `Pandas`. This step ensures data correctness before loading it into the database.
 
 ### Step 4: PostgreSQL Database Loading
 
-Use SQLAlchemy API to establish a connection with the PostgreSQL database. Automatically generate tables based on column names and inferred data types. Load the extracted and processed data into the appropriate tables.
+Use `SQLAlchemy` API to establish a connection with the `PostgreSQL` database. Automatically generate tables based on column names and inferred data types. Load the extracted and processed data into the appropriate tables.
 
 ## Configuration
 
@@ -69,25 +69,28 @@ Ensure you have the necessary credentials and configuration settings :
 - Web scraping targets (Jumia website structure).
 - Excel file paths for temporary storage.
 
-it's necessary to consult the Excel2PostgresLoader.py script and change these parameters
+it's necessary to consult the `Excel2PostgresLoader.py` script and change these parameters
 
 ## Readme
 
 ### Installation
 
-1. Clone this repository to your local machine.
+1. Clone this repository to your local machine using the following command:
+ ```bash
+pip clone https://github.com/aymane-maghouti/Jumia-data-pipeline.git
+```
    
 2. Install the required libraries using the following command:
    
-   ```bash
-    pip install beautifulsoup4 pandas sqlalchemy psycopg2
-   ```
+```bash
+pip install beautifulsoup4 pandas sqlalchemy psycopg2
+```
 
 or just navigate to the project folder and run this command
 
-   ```bash
-   pip install requirements.txt
-   ```
+```bash
+pip install requirements.txt
+```
 ### Usage
 
 1. **Web Scraping:**
@@ -121,7 +124,7 @@ Execute each step's script in the following order:
 
 Ensure that you have the required permissions and access rights for file manipulation and database operations.
 
-This project automates the process of collecting data from a website, storing it temporarily in an Excel file, and eventually transferring it into a PostgreSQL database. It showcases the power of Python libraries such as Beautiful Soup, Pandas, and SQLAlchemy in creating an end-to-end ETL pipeline.
+This project automates the process of collecting data from a website, storing it temporarily in an Excel file, and eventually transferring it into a `PostgreSQL` database. It showcases the power of `Python` libraries such as `BeautifulSoup`, `Pandas`, and `SQLAlchemy` in creating an end-to-end `ETL pipeline`.
 
 Feel free to customize the content and functionality  according to your specific requirements.
 
